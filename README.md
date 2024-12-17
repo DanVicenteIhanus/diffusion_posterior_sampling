@@ -50,6 +50,11 @@ https://github.com/jychoi118/ilvr_adm
 
 Download these `.pt` files into the `./models` directory.
 
+The model for the `NonLinearBlur` model is the pretrained `GOPRO_VAE.pth` model found here: 
+https://github.com/VinAIResearch/blur-kernel-space-exploring
+
+Download this model into the `.measurement_models/blur_models/pretrained/` folder.
+
 ## Solving Inverse Problems
 Main sampling procedure is found in `./scripts/image_sample.py`. Example run with Gaussian blur, $\sigma =0.05$ on the `celebA-HQ` dataset with $NFE=1000$ and step_size = 0.5:
 
